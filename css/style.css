@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-start {
+    display: block;
+    background-color: peru;
+    border-radius: 15px;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: #fff;
+}
+
+.container {
+    width: 800px;
+    height: 900px;
+    border: 1px solid #777;
+    margin: 1rem auto;
+    background-image: url('../img/mainpic.jpg');
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+        "month1 month2 month3"
+        "month4 month5 month6"
+        "month7 month8 month9"
+        "month10 month11 month12"
+        "month13 month14 month15"
+        "month16 month17 month18"
+        "month19 month20 month21"
+        "month22 month23 month24"
+    ;
+
+}
+
+.img {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #777;
+    transition: opacity 3s;
+}
